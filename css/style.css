@@ -1,0 +1,181 @@
+/* *,
+:before,
+:after {
+  box-sizing: border-box;
+} */
+
+:root {
+  /* fonts */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  /* text colors */
+  --main-tx-cl: #757575;
+  --dark-tx-cl: #212121;
+  --ligth-tx-cl: #ffffff;
+  --accent-tx-cl: #2196f3;
+
+  /* bg colors */
+  --dark-bg: #2f303a;
+  --ligth-bg: #f5f4fa;
+  /* others */
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-tx-cl);
+}
+/* reset */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.contact {
+  font-style: normal;
+}
+
+.section-title {
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--dark-tx-cl);
+}
+.current {
+  color: var(--accent-tx-cl);
+}
+
+/* Header */
+
+.logo {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-blue {
+  color: var(--accent-tx-cl);
+}
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.header-list {
+  color: var(--dark-tx-cl);
+}
+
+.active:hover,
+.active:focus {
+  color: var(--accent-tx-cl);
+}
+
+.intro {
+  background-color: var(--dark-bg);
+  color: var(--ligth-tx-cl);
+  text-align: center;
+}
+.intro-tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-tx-cl);
+  color: var(--ligth-tx-cl);
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.feature-title {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-tx-cl);
+}
+
+.feature-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--dark-tx-cl);
+}
+
+.team-desc {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  background-color: var(--dark-bg);
+}
+.footer-logo {
+  color: var(--ligth-tx-cl);
+}
+
+.contact-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contact-link-white {
+  color: var(--ligth-tx-cl);
+}
+
+/* PORTFOLIO */
+
+.filter-btn {
+  font-family: inherit;
+  background-color: var(--ligth-bg);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--dark-tx-cl);
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: var(--ligth-bg);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-tx-cl);
+  color: var(--ligth-tx-cl);
+  border-color: var(--accent-tx-cl);
+}
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--dark-tx-cl);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
