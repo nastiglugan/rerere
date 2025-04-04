@@ -21,30 +21,36 @@
   </head>
   <body>
     <header class="header">
-      <a href="" class="logo"><span class="logo-blue">Web</span>Studio</a>
-      <nav class="header-nav">
-        <ul class="list header-list">
-          <li class="header-item">
-            <a href="./index.html" class="active">Студія</a>
+      <div class="container header-container">
+        <a href="" class="logo"><span class="logo-blue">Web</span>Studio</a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="./index.html" class="header-link active current"
+                >Студія</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link active">Портфоліо</a>
+            </li>
+            <li class="header-item">
+              <a href="#contacts" class="header-link active">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <a href="mailto:info@devstudio.com" class="contact-link active"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-item">
-            <a href="#" class="active current">Портфоліо</a>
-          </li>
-          <li class="header-item">
-            <a href="#contacts" class="active">Контакти</a>
+          <li class="contact-item">
+            <a href="tel:+380961111111" class="contact-link active"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="list contact-list">
-        <li class="contact-item">
-          <a href="mailto:info@devstudio.com" class="contact-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contact-item">
-          <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="portfolio">
@@ -68,8 +74,8 @@
             </li>
           </ul>
 
-          <ul class="portfolio-list list">
-            <li class="portfolio-item">
+          <ul class="portfolio-list card-set">
+            <li class="portfolio-item card-set-item">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   src="./img/portfolio/img-1.jpg"
@@ -77,8 +83,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-item">
@@ -89,10 +97,12 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">
-                  Постер New Orlean vs Golden Star
-                </h2>
-                <p class="portfolio-text">Дизайн</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-item">
@@ -103,8 +113,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Ресторан Seafood</h2>
-                <p class="portfolio-text">Додаток</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-item">
@@ -115,8 +127,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт Prime</h2>
-                <p class="portfolio-text">Маркетинг</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-item">
@@ -127,8 +141,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт Boxes</h2>
-                <p class="portfolio-text">Додаток</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">Проєкт Boxes</h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-item">
@@ -139,8 +155,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-item">
@@ -151,8 +169,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Видання Limited Edition</h2>
-                <p class="portfolio-text">Дизайн</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">Видання Limited Edition</h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-item">
@@ -163,8 +183,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Проєкт LAB</h2>
-                <p class="portfolio-text">Маркетинг</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">Проєкт LAB</h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-item">
@@ -175,39 +197,43 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-title">Growing Business</h2>
-                <p class="portfolio-text">Додаток</p>
+                <div class="portfolio-conteiner">
+                  <h2 class="portfolio-title">Growing Business</h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <a href="#" class="footer-logo logo"
-        ><span class="logo-blue">Web</span>Studio</a
-      >
-      <address class="contact">
-        <ul class="list">
-          <li>
-            <a
-              href="https://goo.gl/maps/JBRobqoZpX21mrEm8"
-              class="contact-link contact-link-white"
-              target="_blank"
-              rel="noopener noreferrer"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-link"></a
-            >info@devstudio.com
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contact-link"></a>+38 096 111 11
-            11
-          </li>
-        </ul>
-      </address>
+    <footer class="footer footer-container">
+      <div class="container footer-container">
+        <a href="#" class="footer-logo logo"
+          ><span class="logo-blue">Web</span>Studio</a
+        >
+        <address class="contact">
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a
+                href="https://goo.gl/maps/JBRobqoZpX21mrEm8"
+                class="contact-link contact-link-white"
+                target="_blank"
+                rel="noopener noreferrer"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="mailto:info@devstudio.com" class="contact-link"></a
+              >info@devstudio.com
+            </li>
+            <li class="footer-item">
+              <a href="tel:+380961111111" class="contact-link"></a>+38 096 111
+              11 11
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
