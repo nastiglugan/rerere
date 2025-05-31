@@ -266,7 +266,6 @@ section {
 .team-name-container {
   padding: 30px 5px;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 .team-item {
@@ -288,6 +287,7 @@ section {
 .team-desc {
   font-size: 16px;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .social-list {
@@ -295,7 +295,6 @@ section {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .social-link {
