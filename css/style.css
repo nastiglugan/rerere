@@ -47,7 +47,7 @@ a {
   /* others */
   --indent: 30px;
   --items: 4;
-
+  --anim-cube: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --border-color: #eee;
 }
 
@@ -102,7 +102,21 @@ body {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 .current {
+  position: relative;
   color: var(--accent-tx-cl);
+}
+
+.current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-tx-cl);
 }
 
 section {
@@ -157,6 +171,8 @@ section {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color var(--anim-cube);
 }
 
 .active:hover,
@@ -259,6 +275,29 @@ section {
   --item: 3;
 }
 
+.services-item {
+  position: relative;
+}
+.backdrop-service {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.backdrop-service-text {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--ligth-tx-cl);
+}
+
 .team {
   background-color: var(--ligth-bg);
 }
@@ -304,6 +343,8 @@ section {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition: color var(--anim-cube), background-color var(--anim-cube);
 }
 
 .social-link:hover,
@@ -326,6 +367,8 @@ section {
   border: 1px solid var(--color-icon);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: border var(--anim-cube), color var(--anim-cube);
 }
 
 .clients-link:hover,
@@ -401,6 +444,9 @@ section {
   cursor: pointer;
   border-radius: 4px;
   border: 0px;
+
+  transition: background-color var(--anim-cube), color var(--anim-cube),
+    border-color var(--anim-cube), box-shadow var(--anim-cube);
 }
 
 .filter-btn:hover,
@@ -444,4 +490,52 @@ section {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.portfolio-link {
+  display: block;
+  transition: box-shadow var(--anim-cube);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-portfolio {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(+100%);
+  transition: opacity var(--anim-cube), transform var(--anim-cube);
+}
+
+.portfolio-link:hover .overlay-portfolio {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio-link:focus .overlay-portfolio {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay-portfolio-text {
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: var(--ligth-tx-cl);
 }
